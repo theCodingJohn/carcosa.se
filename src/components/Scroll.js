@@ -39,14 +39,10 @@ class Scroll extends React.Component {
         default:
       }
     }
-    scroll
-      ? this.scrollTo(elem, offset, timeout)
-      : console.log(`Element not found: ${element}`); // eslint-disable-line
+    scroll ? this.scrollTo(elem, offset, timeout) : console.log(`Element not found: ${element}`); // eslint-disable-line
   }
   scrollTo(element, offSet = 0, timeout = null) {
-    const elemPos = element
-      ? element.getBoundingClientRect().top + window.pageYOffset
-      : 0;
+    const elemPos = element ? element.getBoundingClientRect().top + window.pageYOffset : 0;
     if (timeout) {
       setTimeout(() => {
         window.scroll({ top: elemPos + offSet, left: 0, behavior: 'smooth' });
