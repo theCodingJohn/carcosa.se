@@ -1,36 +1,31 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Highlights', // <title>
+  siteTitle: 'Carcosa R&D',
   manifestName: 'Highlights',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
-  pathPrefix: `/gatsby-starter-highlights/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav',
-  subHeading: 'Web Developer',
+  manifestIcon: 'src/assets/img/sacred-cow.svg',
+  pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
+  heading: 'Carcosa R&D',
+  subHeading: 'System Development',
   // social
   socialLinks: [
     {
+      icon: 'fa-linkedin',
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/carcosa-rnd',
+    },
+    {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://github.com/carcosa-rnd',
     },
     {
       icon: 'fa-envelope-o',
       name: 'Email',
-      url: 'mailto:anubhav.srivastava00@gmail.com',
+      url: 'mailto:info@carcosa.se',
     },
   ],
 };

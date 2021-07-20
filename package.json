@@ -1,17 +1,18 @@
 {
-  "name": "gatsby-starter-highlights",
+  "name": "carcosa.se",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Highlights by HTML5 UP",
+  "description": "Carcosa R&D AB",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-highlights.git"
+    "url": "git+https://github.com/carcosa/carcosa.se.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Daniel Lindh",
+    "email": "daniel@cybercow.se"
   },
   "dependencies": {
     "gatsby": "^2.20.2",
+    "gatsby-plugin-google-analytics": "^2.3.19",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.1.0",
     "gatsby-plugin-react-helmet": "^3.2.0",
@@ -38,14 +39,9 @@
     "prettier": "^1.17.0",
     "rimraf": "^3.0.2"
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-highlights"
-  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-highlights/issues"
+    "url": "https://github.com/carcosa-rnd/carcosa.se/issues"
   },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-highlights#readme"
+  "homepage": "carcosa.se"
 }
