@@ -17,10 +17,8 @@ export default function Footer() {
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; Highlights</li>
-        <li>
-          Design: <a href="http://html5up.net">HTML5 UP</a>
-        </li>
+        <li>&copy; Carcosa R&D AB 2021</li>
+
         <li>
           Demo Images: <a href="http://unsplash.com">Unsplash</a>
         </li>

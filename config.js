@@ -9,7 +9,7 @@ module.exports = {
   manifestIcon: 'src/assets/img/sacred-cow.svg',
   pathPrefix: `/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Carcosa R&D',
-  subHeading: 'System Development',
+  subHeading: 'Venture Time Firm through Software Development',
   // social
   socialLinks: [
     {
