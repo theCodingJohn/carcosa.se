@@ -12,7 +12,9 @@ const sections = [
   { id: 'one', bg: require('../assets/images/pic01.jpg') },
   { id: 'two', bg: require('../assets/images/pic02.jpg') },
   { id: 'three', bg: require('../assets/images/pic03.jpg') },
+  { id: 'footer', bg: require('../assets/images/pic04.jpg') },
 ];
+
 const IndexPage = () => (
   <Layout>
     <Header />
@@ -43,7 +45,7 @@ const IndexPage = () => (
     <section id="two" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[0].bg} alt="" />
+          <img src={sections[1].bg} alt="" />
         </span>
         <div className="content">
           <header className="major">
@@ -66,7 +68,7 @@ const IndexPage = () => (
     <section id="three" className="main special">
       <div className="container">
         <span className="image fit primary">
-          <img src={sections[1].bg} alt="" />
+          <img src={sections[2].bg} alt="" />
         </span>
         <div className="content">
           <header className="major">
@@ -121,7 +123,7 @@ const IndexPage = () => (
     <Scrollspy
       items={sections.map(s => s.id)}
       currentClassName="active"
-      offset={50}
+      offset={0}
       componentTag={'div'}
     >
       {sections.map(s => {

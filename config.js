@@ -15,7 +15,7 @@ module.exports = {
     {
       icon: 'fa-linkedin',
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/carcosa-rnd',
+      url: 'https://www.linkedin.com/company/carcosa-rnd',
     },
     {
       icon: 'fa-github',
