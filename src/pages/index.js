@@ -31,7 +31,7 @@ const IndexPage = () => (
           <p>
             We are startup hub and Time Venture firm, investing software development time in
             start-up companies. Through collaboration with other passionate co-founders we build
-            teams, products and companies with clear bussiness modelles.
+            teams, products and companies with clear bussiness modells.
           </p>
         </div>
         <Scroll type="id" element="two">
