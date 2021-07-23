@@ -30,7 +30,7 @@ module.exports = {
     },
     announcementBar: {
       id: 'support_us', // Any value that will identify this message.
-      content: 'We are hiring, <a href="/docs/hiring/backend-developer">read more</a>',
+      content: 'We are hiring, <a href="/docs/hiring/developer">read more</a>',
       backgroundColor: '#fafbfc', // Defaults to `#fff`.
       textColor: '#091E42', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
@@ -63,23 +63,23 @@ module.exports = {
         src: 'img/navigation/logo.svg',
       },
       links: [
-        /*{
+        {
           title: 'About',
           items: [
             {
-              label: 'What is Clutch?',
-              to: 'docs/about/what-is-clutch',
+              label: 'About us',
+              to: 'docs/intro',
             },
             {
-              label: 'Roadmap',
-              to: 'docs/about/roadmap',
+              label: 'Values',
+              to: 'docs/values',
             },
             {
-              label: 'Architecture',
-              to: 'docs/about/architecture',
+              label: 'Contact us',
+              to: 'docs/contact-us',
             },
           ],
-        },*/
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Carcosa R&D AB`,
     },

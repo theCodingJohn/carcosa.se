@@ -14,7 +14,7 @@ const featureList = [
     description: `
     We are a Time Venture firm, a startup hub or just entrepreneurs, investing time in start-up
     companies. Through collaboration with other passionate co-founders we build teams, products
-    and companies with clear business modells.
+    and companies with clear business models.
     `,
   },
   {
@@ -25,16 +25,16 @@ const featureList = [
     title: 'What we do?',
     iconStyle: 'fe fe-trending-up',
     description: `
-    We build teams, tech and companies, to be able solve problems for our customers. As much as possible we try to
-    create tech, proccess, documents, models and systems that can be used in all our subsidiaries. To many companies
-    inventes the wheel over and over again.
+    We build teams, tech and companies, to be able solve problems for our end-customers. We strive to
+    create tech, proccesses, documents, models and systems that can be used in all our subsidiaries. Too many companies
+    invents the wheel over and over again.
     `,
   },
   {
     title: 'Who are we?',
     iconStyle: 'fe fe-cpu',
     description: `
-    We are passionated it-entrepreneurs for life. Since early childhood we have been hacking with computers
+    We are passionate IT-entrepreneurs for life. Since early childhood we have been experimenting with computers
     and been eager to learn more about those marvelous things. During our adult life we have
     been running companies and performed two exits.
     `,
@@ -44,7 +44,7 @@ const featureList = [
     title: 'Market',
     iconStyle: 'fe fe-dollar-sign',
     description: `
-    A company starts with a person who have a problem that needs to be solved. If there is enough of
+    A company starts with a person who has a problem that needs to be solved. If there is enough of
     that kind of person, our goal is to solve that problem.
     `,
   },
@@ -65,7 +65,7 @@ function Hero({ tagline, config }) {
       <div className={classnames('container', styles.container, styles.heroContainer)}>
         <h1 className={classnames(styles.heroTitle)}>Venture Time</h1>
         <h4 className={classnames(styles.heroDescription)}>
-          We are an operative co-founder of it-companies with international growth ambitions. Our
+          We are an operative co-founder of IT-companies with international growth ambitions. Our
           primary investment resources are time and knowledge to solve common biz and tech problems.
         </h4>
         {/* <div className={styles.buttons}>

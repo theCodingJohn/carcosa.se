@@ -1,8 +1,8 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Frontend Developer (React)
+# React and node.js developer
 
 - Do you have a passion for tech and strive to be a legendary developer?
 - Do you value quality products over feature quantity?
@@ -40,3 +40,5 @@ WHY BECOME AN INHABITANT OF CARCOSA
 - Work from anywhere.
 
 Carcosa R&D - We are the tech teams, handling the software research & development, for a group of Swedish IT-companies in the foodtech and fintech industry. Our IT-plattform consist of severeal modules that are common between the different companies and some that are specific.
+
+Send application to info@carcosa.se

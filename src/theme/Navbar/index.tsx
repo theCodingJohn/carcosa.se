@@ -39,12 +39,12 @@ var items = [
     icon: 'fe fe-book',
     label: 'Docs',
   },
-  {
-    to: 'blog',
-    activeBasePath: 'blog',
-    icon: 'fe fe-rss',
-    label: 'Blog',
-  },
+  // {
+  //   to: 'blog',
+  //   activeBasePath: 'blog',
+  //   icon: 'fe fe-rss',
+  //   label: 'Blog',
+  // },
 ];
 
 interface NavLinkProps {

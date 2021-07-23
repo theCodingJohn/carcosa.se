@@ -2,34 +2,9 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# About Us
 
-Let's discover **Docusaurus in less than 5 minutes**.
+We are an operative co-founder of IT-companies with international growth ambitions. Our primary investment resources are time and knowledge to solve common biz and tech problems.
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+Carcosa R&D is the front of a cooperation between Daniel Lindh, Martin Palmer and our different teams.
+We have worked together since 1997 when we had our first software development job at the same company.
