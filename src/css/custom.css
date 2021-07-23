@@ -7,14 +7,24 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #00a4b8;
+  --ifm-color-primary-dark: #0094a6;
+  --ifm-color-primary-darker: #008b9c;
+  --ifm-color-primary-darkest: #007381;
+  --ifm-color-primary-light: #00b4ca;
+  --ifm-color-primary-lighter: #00bdd4;
+  --ifm-color-primary-lightest: #00d5ef;
   --ifm-code-font-size: 95%;
+
+  --ifm-navbar-link-color: rgb(40, 29, 29);
+  --ifm-navbar-link-hover-color: #dceff5;
+
+  /* --ifm-font-color-base-inverse: rgb(40, 29, 29);
+  --ifm-footer-color: #c25725;
+  --ifm-footer-padding-vertical: -10px;
+  --ifm-navbar-background-color: rgb(40, 29, 29); */
+  --ifm-footer-color: #fff;
+  --ifm-footer-background-color: #123040;
 }
 
 .docusaurus-highlight-code-line {
@@ -23,7 +33,9 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
-
+html {
+  background-color: #dceff5;
+}
 html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }

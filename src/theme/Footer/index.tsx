@@ -50,7 +50,7 @@ function Logo({ ...props }) {
   const {
     navbar: { logo = {} as NavbarLogo },
   } = useThemeConfig();
-  const logoImageUrl = useBaseUrl('img/navigation/carcosa-rnd.svg');
+  const logoImageUrl = useBaseUrl('img/carcosa-white.svg');
 
   return (
     <div className={clsx('navbar__brand', styles.navbarLogo)} {...props}>
@@ -134,6 +134,7 @@ function Footer() {
   }
 
   const classNames = ['footer'];
+  classNames.push(styles.footer);
   if (typeof window !== 'undefined' && window.location.pathname === '/') {
     if (footer.style === 'dark') {
       classNames.push(styles.gradientDark);
@@ -162,17 +163,6 @@ function Footer() {
           <div className={clsx('container', styles.container)}>
             <Links links={links} />
           </div>
-        </div>
-        <div className={clsx(styles.section)}>
-          {copyright && (
-            <div className={clsx('text--center', styles.copyright)}>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: copyright,
-                }}
-              />
-            </div>
-          )}
         </div>
       </footer>
     </>

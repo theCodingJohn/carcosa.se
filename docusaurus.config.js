@@ -10,6 +10,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
+  trailingSlash: true,
   organizationName: 'carcosa-rnd', // Usually your GitHub org/user name.
   projectName: 'carcosa.se', // Usually your repo name.
   stylesheets: [
@@ -38,7 +39,7 @@ module.exports = {
       //title: 'Venture Time Firm',
       logo: {
         alt: 'Carcosa Logo',
-        src: 'img/navigation/carcosa-rnd.svg',
+        src: 'img/carcosa-black.svg',
       },
       hideOnScroll: false,
       items: [
@@ -97,7 +98,7 @@ module.exports = {
         lines: ["Don't take our word for it.", 'See what Clutch has to offer.'],
         cta: {
           text: 'Workflows & Components',
-          link: 'docs/components',
+          link: 'docs/intro',
         },
       },
       consolidation: {

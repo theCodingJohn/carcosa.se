@@ -28,28 +28,23 @@ interface ItemProps {
 // items defined here instead of config so they can have an associated icon
 var items = [
   {
+    to: '/',
+    activeBasePath: '',
+    icon: 'fe fe-home',
+    label: 'Home',
+  },
+  {
     to: 'docs/intro',
     activeBasePath: 'docs',
     icon: 'fe fe-book',
     label: 'Docs',
-  } /*
+  },
   {
     to: 'blog',
     activeBasePath: 'blog',
     icon: 'fe fe-rss',
     label: 'Blog',
-  },*/,
-  {
-    to: '/docs/contact-us',
-    activeBasePath: 'docs',
-    icon: 'fe fe-message-square',
-    label: 'Contact us',
   },
-  /*{
-    href: 'https://github.com/carcosa-rnd',
-    icon: 'fe fe-github',
-    label: 'GitHub',
-  },*/
 ];
 
 interface NavLinkProps {
@@ -319,7 +314,7 @@ function Navbar() {
               className={clsx('navbar__title', styles.navbarLogoTextCustom, {
                 [styles.hideLogoText]: isSearchBarExpanded,
               })}
-              src={useBaseUrl('img/navigation/carcosa-rnd.svg')}
+              src={useBaseUrl('img/carcosa-black.svg')}
             />
           </div>
           {!disableColorModeSwitch && sidebarShown && (

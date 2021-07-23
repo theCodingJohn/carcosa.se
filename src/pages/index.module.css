@@ -59,25 +59,43 @@
 
 /* Hero Styling */
 .heroContainer {
-  width: 50%;
+  width: 40%;
 }
 
 .heroSection {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vw), 0 100%);
+
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
   padding: 4rem 0;
+  left: auto;
   position: relative;
   overflow: hidden;
   background-color: #00a4b8;
-  background: linear-gradient(3deg, #dceff5 12%, #00a4b8 13%);
-  color: #242526;
+  /* background: linear-gradient(3deg, #dceff5 12%, #00a4b8 13%); */
+  color: #fff;
   /* color: #fffff; */
   /* max-width: 1200px; */
   /* background-image: url('/img/microsite/overlay.png'), url('/img/microsite/bg.jpg'); */
 }
 
+.heroTitle {
+  font-size: 4rem;
+}
+
 .heroDescription {
-  color: #2d3f50;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: var(--ifm-line-height-base);
+  font-family: var(--ifm-font-family-base);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 .blueBtn {
@@ -124,6 +142,16 @@
 .featureImage {
   height: 75px;
   width: 75px;
+}
+
+.featureIcon {
+  color: #02acbe;
+  font-size: 3rem;
+}
+
+.featureBigIcon {
+  color: #02acbe;
+  font-size: 15rem;
 }
 
 .featureText {

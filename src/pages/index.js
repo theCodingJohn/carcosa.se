@@ -6,12 +6,11 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
 
 const featureList = [
   {
     title: 'What are we?',
-    imageUrl: 'img/microsite/reasons/secure.svg',
+    iconStyle: 'fe fe-help-circle',
     description: `
     We are a Time Venture firm, a startup hub or just entrepreneurs, investing time in start-up
     companies. Through collaboration with other passionate co-founders we build teams, products
@@ -20,11 +19,11 @@ const featureList = [
   },
   {
     title: '',
-    imageUrl: 'img/microsite/clock.svg',
+    iconStyle: 'fe fe-clock',
   },
   {
     title: 'What we do?',
-    imageUrl: 'img/microsite/reasons/single-entrypoint.svg',
+    iconStyle: 'fe fe-trending-up',
     description: `
     We build teams, tech and companies, to be able solve problems for our customers. As much as possible we try to
     create tech, proccess, documents, models and systems that can be used in all our subsidiaries. To many companies
@@ -33,7 +32,7 @@ const featureList = [
   },
   {
     title: 'Who are we?',
-    imageUrl: 'img/microsite/reasons/extensible.svg',
+    iconStyle: 'fe fe-cpu',
     description: `
     We are passionated it-entrepreneurs for life. Since early childhood we have been hacking with computers
     and been eager to learn more about those marvelous things. During our adult life we have
@@ -43,15 +42,16 @@ const featureList = [
 
   {
     title: 'Market',
-    imageUrl: 'img/microsite/reasons/file.svg',
+    iconStyle: 'fe fe-dollar-sign',
     description: `
-
+    A company starts with a person who have a problem that needs to be solved. If there is enough of
+    that kind of person, our goal is to solve that problem.
     `,
   },
 
   {
     title: 'How we do?',
-    imageUrl: 'img/microsite/reasons/user-experience.svg',
+    iconStyle: 'fe fe-users',
     description: `
       At the heart of each company is a diversified, skilled, focused and commited team of wounderful people.
       We believe and have witnessed first-hand that without the right people, a startup is doomed to fail.
@@ -63,11 +63,10 @@ function Hero({ tagline, config }) {
   return (
     <header className={classnames('hero hero--primary', styles.heroSection)}>
       <div className={classnames('container', styles.container, styles.heroContainer)}>
-        <h1 className="hero__title">Venture Time Firm</h1>
+        <h1 className={classnames(styles.heroTitle)}>Venture Time</h1>
         <h4 className={classnames(styles.heroDescription)}>
           We are an operative co-founder of it-companies with international growth ambitions. Our
-          primary investment resource is time and knowledge to solve common tech problemes. It
-          ranges from business to software development.
+          primary investment resources are time and knowledge to solve common biz and tech problems.
         </h4>
         {/* <div className={styles.buttons}>
           <Link
@@ -82,27 +81,26 @@ function Hero({ tagline, config }) {
           </Link>
         </div> */}
       </div>
-      <div style={{ width: '20%', margin: '0 5% 5% 5%' }}>
-        {/* <img src={useBaseUrl('img/microsite/home.svg')} alt="home icon" /> */}
-      </div>
+      {/* <div style={{ width: '20%', margin: '0 5% 5% 5%' }}>
+        { <img src={useBaseUrl('img/microsite/home.svg')} alt="home icon" /> }
+      </div> */}
     </header>
   );
 }
 
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature({ iconStyle, title, description }) {
   return (
     <div className={classnames('col col--4')}>
       {description === undefined ? (
         <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <img src={imgUrl} alt={title} height="300" />
+          <span className={classnames(styles.featureBigIcon, iconStyle)} />
         </div>
       ) : (
         <>
-          {imgUrl && (
+          {iconStyle && (
             <div className={classnames('text--center', styles.featureIcon)}>
               <hr className={classnames(styles.featureAccent)} />
-              <img className={styles.featureImage} src={imgUrl} alt={title} />
+              <span className={classnames(styles.featureIcon, iconStyle)} />
               <hr className={classnames(styles.featureAccent)} />
             </div>
           )}
@@ -186,8 +184,8 @@ export default function Home() {
       <Hero tagline={siteConfig.tagline} config={siteConfig.customFields.hero} />
       <main>
         <Features config={sections.features} />
-        <Demo config={sections.demo} />
-        <Consolidation config={sections.consolidation} />
+        {/* <Demo config={sections.demo} />
+        <Consolidation config={sections.consolidation} /> */}
       </main>
     </Layout>
   );
