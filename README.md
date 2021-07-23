@@ -1,23 +1,33 @@
-# cybercow.se
+# Website
 
-Carcosa R&D Company webpage
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-Credits: https://github.com/anubhavsrivastava/gatsby-starter-aerial
+## Installation
 
-Available URLs
+```console
+yarn install
+```
 
-- https://carcosa.se
+## Local Development
 
-## Install
+```console
+yarn start
+```
 
-    nvm use
-    npm install --global gatsby-cli
-    yarn
-    yarn develop
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Release to github
+## Build
 
-This command will build and release the webpage to github pages.
-That is stored in the branch gh-pages
+```console
+yarn build
+```
 
-    yarn deploy
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+```console
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.

@@ -1,143 +1,194 @@
 import React from 'react';
-import Scrollspy from 'react-scrollspy';
+import clsx from 'clsx';
+import classnames from 'classnames';
+import Layout from '@theme/Layout';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './index.module.css';
+import HomepageFeatures from '../components/HomepageFeatures';
 
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Scroll from '../components/Scroll';
-import overLayPic from '../assets/images/overlay.png';
-import { Link } from 'gatsby';
+const featureList = [
+  {
+    title: 'What are we?',
+    imageUrl: 'img/microsite/reasons/secure.svg',
+    description: `
+    We are a Time Venture firm, a startup hub or just entrepreneurs, investing time in start-up
+    companies. Through collaboration with other passionate co-founders we build teams, products
+    and companies with clear business modells.
+    `,
+  },
+  {
+    title: '',
+    imageUrl: 'img/microsite/clock.svg',
+  },
+  {
+    title: 'What we do?',
+    imageUrl: 'img/microsite/reasons/single-entrypoint.svg',
+    description: `
+    We build teams, tech and companies, to be able solve problems for our customers. As much as possible we try to
+    create tech, proccess, documents, models and systems that can be used in all our subsidiaries. To many companies
+    inventes the wheel over and over again.
+    `,
+  },
+  {
+    title: 'Who are we?',
+    imageUrl: 'img/microsite/reasons/extensible.svg',
+    description: `
+    We are passionated it-entrepreneurs for life. Since early childhood we have been hacking with computers
+    and been eager to learn more about those marvelous things. During our adult life we have
+    been running companies and performed two exits.
+    `,
+  },
 
-const sections = [
-  { id: 'one', bg: require('../assets/images/pic01.jpg') },
-  { id: 'two', bg: require('../assets/images/pic02.jpg') },
-  { id: 'three', bg: require('../assets/images/pic03.jpg') },
-  { id: 'footer', bg: require('../assets/images/pic04.jpg') },
+  {
+    title: 'Market',
+    imageUrl: 'img/microsite/reasons/file.svg',
+    description: `
+
+    `,
+  },
+
+  {
+    title: 'How we do?',
+    imageUrl: 'img/microsite/reasons/user-experience.svg',
+    description: `
+      At the heart of each company is a diversified, skilled, focused and commited team of wounderful people.
+      We believe and have witnessed first-hand that without the right people, a startup is doomed to fail.
+    `,
+  },
 ];
 
-const IndexPage = () => (
-  <Layout>
-    <Header />
+function Hero({ tagline, config }) {
+  return (
+    <header className={classnames('hero hero--primary', styles.heroSection)}>
+      <div className={classnames('container', styles.container, styles.heroContainer)}>
+        <h1 className="hero__title">Venture Time Firm</h1>
+        <h4 className={classnames(styles.heroDescription)}>
+          We are an operative co-founder of it-companies with international growth ambitions. Our
+          primary investment resource is time and knowledge to solve common tech problemes. It
+          ranges from business to software development.
+        </h4>
+        {/* <div className={styles.buttons}>
+          <Link
+            className={classnames(
+              'button button--outline button--lg',
+              styles.button,
+              styles.blueBtn
+            )}
+            to={useBaseUrl('docs/about/what-is-clutch')}
+          >
+            Learn More
+          </Link>
+        </div> */}
+      </div>
+      <div style={{ width: '20%', margin: '0 5% 5% 5%' }}>
+        {/* <img src={useBaseUrl('img/microsite/home.svg')} alt="home icon" /> */}
+      </div>
+    </header>
+  );
+}
 
-    <section id="one" className="main special">
-      <div className="container">
-        <span className="image fit primary">
-          <img src={sections[0].bg} alt="" />
-        </span>
-        <div className="content">
-          <header className="major">
-            <h2>What are we?</h2>
-          </header>
-          <p>
-            We are startup hub and Time Venture firm, investing software development time in
-            start-up companies. Through collaboration with other passionate co-founders we build
-            teams, products and companies with clear bussiness modells.
-          </p>
+function Feature({ imageUrl, title, description }) {
+  const imgUrl = useBaseUrl(imageUrl);
+  return (
+    <div className={classnames('col col--4')}>
+      {description === undefined ? (
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
+          <img src={imgUrl} alt={title} height="300" />
         </div>
-        <Scroll type="id" element="two">
-          <a href="#two" className="goto-next ">
-            Next
-          </a>
-        </Scroll>
-      </div>
-    </section>
+      ) : (
+        <>
+          {imgUrl && (
+            <div className={classnames('text--center', styles.featureIcon)}>
+              <hr className={classnames(styles.featureAccent)} />
+              <img className={styles.featureImage} src={imgUrl} alt={title} />
+              <hr className={classnames(styles.featureAccent)} />
+            </div>
+          )}
+          <div className="text--center">
+            <h2>{title}</h2>
+          </div>
+          <div className={classnames(styles.featureText)}>
+            <p>{description}</p>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
 
-    <section id="two" className="main special">
-      <div className="container">
-        <span className="image fit primary">
-          <img src={sections[1].bg} alt="" />
-        </span>
-        <div className="content">
-          <header className="major">
-            <h2>Who are we?</h2>
-          </header>
-          <p>
-            We are it-entrepreneurs for life. Since early childhood we have been hacking with
-            computers and been eager to learn more about those marvelous things. During our adult
-            life we have been running companies and performed two exits.
-          </p>
+function Features({ config }) {
+  return (
+    <section className={classnames(styles.section, styles.features)}>
+      <div className={classnames('container', styles.container)}>
+        <div className="row">
+          {featureList.map((props, idx) => (
+            <Feature key={idx} {...props} />
+          ))}
         </div>
-        <Scroll type="id" element="three">
-          <a href="#three" className="goto-next ">
-            Next
-          </a>
-        </Scroll>
       </div>
     </section>
+  );
+}
 
-    <section id="three" className="main special">
-      <div className="container">
-        <span className="image fit primary">
-          <img src={sections[2].bg} alt="" />
-        </span>
-        <div className="content">
-          <header className="major">
-            <h2>What we do?</h2>
-          </header>
-          <p>
-            We build tech, proccess and systems that can be used in all companies we collaborate
-            with. This minimizes the technology and information we need to understand and helps us
-            to be experts in what we do.
-          </p>
-          <ul className="icons-grid">
-            <li>
-              <span className="icon major fa-code" />
-              <h3>System Development</h3>
-            </li>
-            <li>
-              <span className="icon major fa-briefcase" />
-              <h3>Bussiness Development</h3>
-            </li>
-            <li>
-              <span className="icon major fa-users" />
-              <h3>Team Development</h3>
-            </li>
-            <li>
-              <span className="icon major fa-coffee" />
-              <h3>Sipping Coffee</h3>
-            </li>
-          </ul>
+function Demo({ config }) {
+  return (
+    <div className={styles.darkBackground}>
+      <section className={classnames('text--center', styles.section, styles.demoSection)}>
+        <div className={classnames('container', styles.container, styles.demoContainer)}>
+          {config.lines.map((line, idx) => (
+            <h1 key={idx} className={classnames('hero__title', styles.sectionHeadingDark)}>
+              {line}
+            </h1>
+          ))}
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <Link
+              className={classnames(
+                'button button--outline button--lg',
+                styles.button,
+                styles.greenBtn,
+                styles.demoBtn
+              )}
+              to={useBaseUrl(config.cta.link)}
+            >
+              {config.cta.text}
+            </Link>
+          </div>
         </div>
-        <Scroll type="id" element="footer">
-          <a href="#footer" className="goto-next ">
-            Next
-          </a>
-        </Scroll>
+      </section>
+    </div>
+  );
+}
+
+function Consolidation({ config }) {
+  return (
+    <section className={classnames(styles.section, styles.consolidation, styles.darkBackground)}>
+      <div className={classnames('container', styles.container)}>
+        <img src={useBaseUrl('img/microsite/consolidation.gif')} />
+      </div>
+      <div className={classnames('container', styles.container, styles.textContainer)}>
+        <div>
+          {config.snippets.map((snippet, idx) => (
+            <p key={idx}>{snippet}</p>
+          ))}
+        </div>
       </div>
     </section>
+  );
+}
 
-    <section id="footer">
-      <div className="container">
-        <header className="major">
-          <h2>Contact us</h2>
-        </header>
-        <p>
-          <b>Phone:</b> 08-38 91 38.
-          <br />
-          <b>Email: </b>info@carcosa.se
-        </p>
-      </div>
-      <Footer />
-    </section>
-
-    <Scrollspy
-      items={sections.map(s => s.id)}
-      currentClassName="active"
-      offset={0}
-      componentTag={'div'}
-    >
-      {sections.map(s => {
-        return (
-          <div
-            key={s.id}
-            className="main-bg"
-            id={`${s.id}-bg`}
-            style={{ backgroundImage: `url(${overLayPic}), url(${s.bg})` }}
-          />
-        );
-      })}
-    </Scrollspy>
-  </Layout>
-);
-
-export default IndexPage;
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
+  const sections = siteConfig.customFields.sections;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.customFields.tagDescription}>
+      <Hero tagline={siteConfig.tagline} config={siteConfig.customFields.hero} />
+      <main>
+        <Features config={sections.features} />
+        <Demo config={sections.demo} />
+        <Consolidation config={sections.consolidation} />
+      </main>
+    </Layout>
+  );
+}

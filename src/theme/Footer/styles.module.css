@@ -1,0 +1,110 @@
+.footer_before_container {
+  background: #123040;
+}
+
+.footer_before {
+  height: 100px;
+  #position: absolute;
+  top: 0px;
+  left: -5%;
+  right: -5%;
+  background: #fff;
+  -webkit-transform: rotate(-1.5deg);
+  -o-transform: rotate(-1.5deg);
+  transform: rotate(-1.5deg);
+  -webkit-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+  z-index: 1;
+}
+
+.gradient {
+  background: #123040;
+  /* background: linear-gradient(360deg, #ffffff 88%, #2d3f50 110%);
+  padding: 3% 6%; */
+}
+
+.gradientDark {
+  background: linear-gradient(0deg, #2d3f50 88%, #202c38 110%);
+}
+
+.noGradient {
+  background: #123040;
+  color: #fff;
+  #border-top: 1px solid var(--ifm-hr-border-color);
+}
+
+.footerAdditional {
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.navbarLogo {
+  height: 30px;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.logoSubtext {
+  margin-left: -2px;
+  max-height: 0%;
+  font-size: x-small;
+  color: #2d3f50;
+}
+
+.lyftLogo {
+  max-height: 120%;
+  margin-bottom: -11px;
+  margin-left: -8px;
+}
+
+.navbarLink {
+  font-weight: bold;
+  color: #2d3f50;
+}
+
+.navbarHidden {
+  top: calc(var(--ifm-navbar-height) * -1) !important;
+}
+
+.footerLogoLink {
+  opacity: 0.5;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.footerLogoLink:hover {
+  opacity: 1;
+}
+
+.section {
+  padding: 6px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  margin: 0 1.5%;
+  color: #2d3f50;
+  font-size: 23px;
+}
+
+.icon:hover {
+  color: #02acbe;
+}
+
+.copyright {
+  color: #2d3f50;
+}
+
+/* Responsive */
+@media only screen and (max-width: 900px) {
+  .container {
+    padding-top: 10%;
+    display: inline-block;
+  }
+}
