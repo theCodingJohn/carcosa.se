@@ -19,7 +19,6 @@ const DefaultNavItemPosition = 'right';
 
 interface ItemProps {
   to: string;
-  activeBasePath: string;
   icon: string;
   label: string;
   className?: string;
@@ -29,13 +28,11 @@ interface ItemProps {
 var items = [
   {
     to: '/',
-    activeBasePath: '',
     icon: 'fe fe-home',
     label: 'Home',
   },
   {
     to: 'docs/intro',
-    activeBasePath: 'docs',
     icon: 'fe fe-book',
     label: 'Docs',
   },

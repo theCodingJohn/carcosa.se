@@ -18,7 +18,6 @@ module.exports = {
     'https://cdn.rawgit.com/luizbills/feather-icon-font/v4.7.0/dist/feather.css',
   ],
   themeConfig: {
-    image: 'img/docs/landing-page.png', // SEO image for Twitter card, etc.
     colorMode: {
       disableSwitch: true,
     },
@@ -29,33 +28,20 @@ module.exports = {
       anonymizeIP: true, // Should IPs be anonymized?
     },
     announcementBar: {
-      id: 'support_us', // Any value that will identify this message.
+      id: 'hirig', // Any value that will identify this message.
       content: 'We are hiring, <a href="/docs/hiring/developer">read more</a>',
       backgroundColor: '#fafbfc', // Defaults to `#fff`.
       textColor: '#091E42', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
     },
     navbar: {
-      //title: 'Venture Time Firm',
+      title: 'Venture Time Firm',
       logo: {
         alt: 'Carcosa Logo',
         src: 'img/carcosa-black.svg',
       },
       hideOnScroll: false,
-      items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'right',
-          label: 'Tutorial',
-        },
-        { to: '/blog', label: 'Blog', position: 'right' },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+      items: [],
     },
     footer: {
       style: 'light',
@@ -81,7 +67,6 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Carcosa R&D AB`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -89,30 +74,8 @@ module.exports = {
     },
   },
   customFields: {
-    tagDescription: 'An extensible platform for infrastructure management.',
     sections: {
-      features: {
-        title: 'Why Clutch?',
-      },
-      demo: {
-        lines: ["Don't take our word for it.", 'See what Clutch has to offer.'],
-        cta: {
-          text: 'Workflows & Components',
-          link: 'docs/intro',
-        },
-      },
-      consolidation: {
-        snippets: [
-          `
-            Stop putting your team through an endless stream of high-friction tools and user interfaces.
-            Clutch allows you to combine many tools into one, in the form that your developers use most.
-          `,
-          `
-            We grow with you. Clutches extensible platform means you can integrate as many tools as
-            you need, even if they are specific to you.
-          `,
-        ],
-      },
+      features: {},
     },
   },
   presets: [
