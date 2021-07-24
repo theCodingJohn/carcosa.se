@@ -64,7 +64,7 @@
 .slope {
   background-color: #00a4b8;
   clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
-  height: 50px;
+  height: 75px;
   margin-top: -1px;
 }
 

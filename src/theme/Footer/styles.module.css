@@ -8,8 +8,9 @@
 .slopeRight {
   background: #fff;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
-  height: 50px;
+  height: 100px;
   margin-bottom: 1rem;
+  margin-top: -1px;
 }
 
 .slopeLeft {
@@ -17,6 +18,7 @@
   clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
   height: 50px;
   margin-bottom: 1rem;
+  margin-top: -1px;
 }
 
 .footerAdditional {
