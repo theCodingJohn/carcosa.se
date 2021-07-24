@@ -57,29 +57,34 @@
   width: 50%;
 }
 
+.slopeContainer {
+  background-color: #dceff5;
+}
+
+.slope {
+  background-color: #00a4b8;
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+  height: 50px;
+  margin-top: -1px;
+}
+
 /* Hero Styling */
 .heroContainer {
   width: 40%;
 }
 
 .heroSection {
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 6vw), 0 100%);
-
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
 
-  padding: 4rem 0;
+  padding: 0rem 0;
   left: auto;
   position: relative;
   overflow: hidden;
   background-color: #00a4b8;
-  /* background: linear-gradient(3deg, #dceff5 12%, #00a4b8 13%); */
   color: #fff;
-  /* color: #fffff; */
-  /* max-width: 1200px; */
-  /* background-image: url('/img/microsite/overlay.png'), url('/img/microsite/bg.jpg'); */
 }
 
 .heroTitle {

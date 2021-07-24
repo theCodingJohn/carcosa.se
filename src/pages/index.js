@@ -176,12 +176,21 @@ function Consolidation({ config }) {
   );
 }
 
+function Slope({ direction }) {
+  return (
+    <div className={styles.slopeContainer}>
+      <div className={styles.slope} />
+    </div>
+  );
+}
+
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const sections = siteConfig.customFields.sections;
   return (
     <Layout title={siteConfig.title} description={siteConfig.customFields.tagDescription}>
       <Hero tagline={siteConfig.tagline} config={siteConfig.customFields.hero} />
+      <Slope />
       <main>
         <Features config={sections.features} />
         {/* <Demo config={sections.demo} />
