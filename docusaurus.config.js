@@ -35,7 +35,7 @@ module.exports = {
       isCloseable: true, // Defaults to `true`.
     },
     navbar: {
-      title: 'Venture Time Firm',
+      title: '',
       logo: {
         alt: 'Carcosa Logo',
         src: 'img/carcosa-black.svg',

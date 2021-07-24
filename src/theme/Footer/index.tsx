@@ -121,9 +121,8 @@ function Links({ links }) {
   );
 }
 
-function Slope({ direction }) {
-  if (direction == 'right') return <div className={styles.slopeRight} />;
-  if (direction == 'left') return <div className={styles.slopeLeft} />;
+function Slope() {
+  return <div className={styles.slope} />;
 }
 
 function Footer() {
@@ -136,7 +135,7 @@ function Footer() {
   return (
     <>
       <footer className={styles.footer}>
-        <Slope direction="right" />
+        <Slope />
         <div className={clsx('container', styles.container)}>
           <div className="container">
             <Logo />
