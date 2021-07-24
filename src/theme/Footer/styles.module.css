@@ -1,39 +1,22 @@
-.footer_before_container {
-  background: var(--ifm-footer-background-color);
-}
-
-.footer_before {
-  height: 100px;
-  top: 0px;
-  left: -5%;
-  right: -5%;
-  background: #fff;
-  -webkit-transform: rotate(-1.5deg);
-  -o-transform: rotate(-1.5deg);
-  transform: rotate(-1.5deg);
-  -webkit-transform-origin: bottom left;
-  -o-transform-origin: bottom left;
-  transform-origin: bottom left;
-  z-index: 1;
-}
-
 .footer {
   padding-bottom: 5rem;
-}
 
-.gradient {
-  background: var(--ifm-footer-background-color);
-  /* background: linear-gradient(360deg, #ffffff 88%, #2d3f50 110%);
-  padding: 3% 6%; */
-}
-
-.gradientDark {
-  background: linear-gradient(0deg, #2d3f50 88%, #202c38 110%);
-}
-
-.noGradient {
   background: var(--ifm-footer-background-color);
   color: #fff;
+}
+
+.slopeRight {
+  background: #fff;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.slopeLeft {
+  background: #fff;
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+  height: 50px;
+  margin-bottom: 1rem;
 }
 
 .footerAdditional {

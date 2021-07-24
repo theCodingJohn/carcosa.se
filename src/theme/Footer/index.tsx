@@ -121,40 +121,22 @@ function Links({ links }) {
   );
 }
 
+function Slope({ direction }) {
+  if (direction == 'right') return <div className={styles.slopeRight} />;
+  if (direction == 'left') return <div className={styles.slopeLeft} />;
+}
+
 function Footer() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
   const { themeConfig = {} } = siteConfig;
   const { footer } = themeConfig;
-
-  const { copyright, links = [] } = footer || {};
-
-  if (!footer) {
-    return null;
-  }
-
-  const classNames = ['footer'];
-  classNames.push(styles.footer);
-  if (typeof window !== 'undefined' && window.location.pathname === '/') {
-    if (footer.style === 'dark') {
-      classNames.push(styles.gradientDark);
-    } else {
-      classNames.push(styles.gradient);
-    }
-  } else {
-    classNames.push(styles.noGradient);
-  }
+  const { links = [] } = footer || {};
 
   return (
     <>
-      <div className={clsx(styles.footer_before_container)}>
-        <div className={clsx(styles.footer_before)}></div>
-      </div>
-      <footer
-        className={clsx(...classNames, {
-          'footer--dark': footer.style === 'dark',
-        })}
-      >
+      <footer className={styles.footer}>
+        <Slope direction="right" />
         <div className={clsx('container', styles.container)}>
           <div className="container">
             <Logo />
