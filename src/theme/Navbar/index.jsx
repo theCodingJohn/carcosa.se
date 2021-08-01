@@ -4,7 +4,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
 import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
@@ -16,13 +15,6 @@ import styles from './styles.module.css';
 
 // retrocompatible with v1
 const DefaultNavItemPosition = 'right';
-
-interface ItemProps {
-  to: string;
-  icon: string;
-  label: string;
-  className?: string;
-}
 
 // items defined here instead of config so they can have an associated icon
 var items = [
@@ -43,15 +35,6 @@ var items = [
   //   label: 'Blog',
   // },
 ];
-
-interface NavLinkProps {
-  to: string;
-  href?: string;
-  label: string;
-  activeClassName?: string;
-  prependBaseUrlToHref?: boolean;
-  icon: string;
-}
 
 function NavLink({
   to,
@@ -85,13 +68,7 @@ function NavLink({
   );
 }
 
-interface NavItemProps extends NavLinkProps {
-  items?: ItemProps[];
-  position?: 'right' | 'left';
-  className?: string;
-}
-
-function NavItem({ items, position = DefaultNavItemPosition, className, ...props }: NavItemProps) {
+function NavItem({ items, position = DefaultNavItemPosition, className, ...props }) {
   const navLinkClassNames = (extraClassName, isDropdownItem = false) =>
     clsx(
       {
@@ -139,11 +116,7 @@ function NavItem({ items, position = DefaultNavItemPosition, className, ...props
   );
 }
 
-interface MobileNavItemProps extends NavItemProps {
-  onClick: any;
-}
-
-function MobileNavItem({ items, className, ...props }: MobileNavItemProps) {
+function MobileNavItem({ items, className, ...props }) {
   // Need to destructure position from props so that it doesn't get passed on.
   const navLinkClassNames = (extraClassName, isSubList = false) =>
     clsx(
@@ -209,7 +182,6 @@ function Navbar() {
     isClient,
   } = useDocusaurusContext();
   const [sidebarShown, setSidebarShown] = useState(false);
-  const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
 
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
@@ -287,10 +259,6 @@ function Navbar() {
             ))}
           </div>
           <div className="navbar__items navbar__items--right">
-            <SearchBar
-              handleSearchBarToggle={setIsSearchBarExpanded}
-              isSearchBarExpanded={isSearchBarExpanded}
-            />
             {rightLinks.map((linkItem, i) => (
               <NavItem {...linkItem} key={i} />
             ))}
@@ -310,9 +278,7 @@ function Navbar() {
             <div className={clsx('navbar__brand', styles.navbarLogoCustom)} onClick={hideSidebar}>
               <Logo imageClassName={clsx('navbar__logo', styles.navbarLogoCustom)} />
               <img
-                className={clsx('navbar__title', styles.navbarLogoTextCustom, {
-                  [styles.hideLogoText]: isSearchBarExpanded,
-                })}
+                className={clsx('navbar__title', styles.navbarLogoTextCustom)}
                 src={useBaseUrl('img/carcosa-black.svg')}
               />
             </div>
@@ -327,7 +293,7 @@ function Navbar() {
           <div className="navbar-sidebar__items">
             <div className="menu">
               <ul className="menu__list">
-                {items.map((linkItem: ItemProps, i) => (
+                {items.map((linkItem, i) => (
                   <MobileNavItem {...linkItem} onClick={hideSidebar} key={i} />
                 ))}
               </ul>

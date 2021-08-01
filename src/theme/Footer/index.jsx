@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import type { NavbarLogo } from '@docusaurus/theme-common';
+import { NavbarLogo } from '@docusaurus/theme-common';
 import { useThemeConfig } from '@docusaurus/theme-common';
 
 import styles from './styles.module.css';
@@ -48,7 +48,7 @@ function FooterLink({ to, href, label, prependBaseUrlToHref, ...props }) {
 
 function Logo({ ...props }) {
   const {
-    navbar: { logo = {} as NavbarLogo },
+    navbar: { logo },
   } = useThemeConfig();
   const logoImageUrl = useBaseUrl('img/carcosa-white.svg');
 
@@ -127,10 +127,10 @@ function Slope() {
 
 function Footer() {
   const context = useDocusaurusContext();
-  const { siteConfig = {} } = context;
-  const { themeConfig = {} } = siteConfig;
+  const { siteConfig } = context;
+  const { themeConfig } = siteConfig;
   const { footer } = themeConfig;
-  const { links = [] } = footer || {};
+  const { links } = footer || {};
 
   return (
     <>
