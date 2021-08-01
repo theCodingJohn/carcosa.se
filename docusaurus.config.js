@@ -85,12 +85,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/carcosa/carcosa-rnd/edit/master/website/',
+          editUrl: 'https://github.com/carcosa-rnd/carcosa.se/edit/master',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl: 'https://github.com/carcosa/carcosa-rnd/edit/master/website/blog/',
+          editUrl: 'https://github.com/carcosa-rnd/carcosa.se/edit/master',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
