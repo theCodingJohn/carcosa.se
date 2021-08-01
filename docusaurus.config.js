@@ -58,7 +58,7 @@ module.exports = {
             },
             {
               label: 'Values',
-              to: 'docs/values',
+              to: 'docs/handbook/values',
             },
             {
               label: 'Contact us',
