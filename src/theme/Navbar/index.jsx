@@ -4,7 +4,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-import SearchBar from '@theme/SearchBar';
 import Toggle from '@theme/Toggle';
 import useThemeContext from '@theme/hooks/useThemeContext';
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
@@ -183,7 +182,6 @@ function Navbar() {
     isClient,
   } = useDocusaurusContext();
   const [sidebarShown, setSidebarShown] = useState(false);
-  const [isSearchBarExpanded, setIsSearchBarExpanded] = useState(false);
 
   const { isDarkTheme, setLightTheme, setDarkTheme } = useThemeContext();
   const { navbarRef, isNavbarVisible } = useHideableNavbar(hideOnScroll);
@@ -261,10 +259,6 @@ function Navbar() {
             ))}
           </div>
           <div className="navbar__items navbar__items--right">
-            <SearchBar
-              handleSearchBarToggle={setIsSearchBarExpanded}
-              isSearchBarExpanded={isSearchBarExpanded}
-            />
             {rightLinks.map((linkItem, i) => (
               <NavItem {...linkItem} key={i} />
             ))}
@@ -284,9 +278,7 @@ function Navbar() {
             <div className={clsx('navbar__brand', styles.navbarLogoCustom)} onClick={hideSidebar}>
               <Logo imageClassName={clsx('navbar__logo', styles.navbarLogoCustom)} />
               <img
-                className={clsx('navbar__title', styles.navbarLogoTextCustom, {
-                  [styles.hideLogoText]: isSearchBarExpanded,
-                })}
+                className={clsx('navbar__title', styles.navbarLogoTextCustom)}
                 src={useBaseUrl('img/carcosa-black.svg')}
               />
             </div>
