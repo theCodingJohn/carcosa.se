@@ -6,28 +6,6 @@
 
 /* Shared Styling */
 
-/* .buttons {
-  display: flex;
-  align-items: center;
-  padding-top: 20px;
-} */
-
-/* .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 70px;
-  min-width: 225px;
-  height: 85px;
-  margin: 2px 8px;
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
-.button:hover {
-  color: #2d3f50;
-} */
-
 .container {
   margin: 5%;
   max-width: 75%;
@@ -38,16 +16,7 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  /* max-width: 1200px; */
 }
-
-/* .sectionHeadingDark {
-  color: #2d3f50;
-} */
-
-/* .darkBackground {
-  background: linear-gradient(90deg, #2d3f50 17.71%, black 65%);
-} */
 
 .textContainer {
   color: #ffffff;
@@ -103,26 +72,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-/* .blueBtn {
-  background-color: #02acbe;
-}
-
-.blueBtn:hover {
-  background-color: #048f9e;
-} */
-
-/* .greenBtn {
-  background-color: #00a650;
-}
-
-.greenBtn:hover {
-  background-color: #019448;
-} */
-
-/* .demoBtn {
-  margin: 5% 8px;
-} */
-
 /* Features Section */
 .features {
   padding: 2rem 0 0 0;
@@ -163,17 +112,6 @@
   margin: 0px 16%;
 }
 
-/* Demo Styling */
-
-/* .demoSection {
-  background: linear-gradient(4deg, transparent 15%, white 16%);
-  padding-top: 0;
-} */
-
-/* .textContainer {
-  padding-top: 2.5%;
-} */
-
 /* Responsive */
 @media screen and (max-width: 997px) {
   .heroContainer {
@@ -209,20 +147,6 @@
 }
 
 @media screen and (max-width: 500px) {
-  /* Shared Styling */
-  /* .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: fit-content;
-    height: 65px;
-  } */
-
-  /* .darkBackground {
-    margin-bottom: -2px;
-    background: linear-gradient(90deg, #2d3f50 17.71%, black 65%);
-  } */
-
   .container {
     margin: 0%;
     max-width: 100%;
@@ -240,21 +164,4 @@
     padding-top: 5%;
     padding-bottom: 5%;
   }
-
-  /* Demo Styling */
-
-  /* .demoSection {
-    background: linear-gradient(2.25deg, transparent 5%, white 6%);
-  }
-
-  .textContainer {
-    width: 100%;
-    padding-top: 10%;
-  }
-
-  .consolidation {
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-  } */
 }
