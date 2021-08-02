@@ -12,7 +12,7 @@
 }
 
 .section {
-  padding: 6% 0px;
+  padding: 6% 0;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -47,8 +47,8 @@
   width: 100%;
   justify-content: center;
   align-items: center;
-
-  padding: 0rem 0;
+  text-align: center;
+  padding: 0;
   left: auto;
   position: relative;
   overflow: hidden;
@@ -58,14 +58,14 @@
 
 .heroTitle {
   font-size: 4rem;
+  white-space: nowrap;
 }
 
 .heroDescription {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: var(--ifm-line-height-base);
-  font-family: var(--ifm-font-family-base);
+  line-height: 1.4;
   -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -ms-text-size-adjust: 100%;
@@ -74,9 +74,13 @@
 
 /* Features Section */
 .features {
-  padding: 2rem 0 0 0;
+  padding: 2rem 0;
   width: 100%;
   background: linear-gradient(180deg, #dceff5 1%, #ffffff 20%);
+}
+
+.featureWrapper {
+  text-align: center;
 }
 
 .featureIcon {
@@ -109,7 +113,7 @@
 }
 
 .featureText {
-  margin: 0px 16%;
+  margin: 0px 10%;
 }
 
 /* Responsive */
@@ -126,7 +130,6 @@
 
   .heroTitle {
     font-size: 3rem;
-    text-align: center;
   }
 
   .heroSection {
@@ -135,6 +138,25 @@
     justify-content: center;
     padding-top: 5%;
     padding-bottom: 5%;
+  }
+
+  /* Feature Styling */
+  .featuresWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .featureWrapper {
+    text-align: center;
+  }
+
+  .featureBigIconWrapper {
+    order: -1;
+  }
+
+  .featureBigIcon {
+    font-size: 10rem;
+    margin-bottom: 30px;
   }
 
   .featureText {
@@ -163,5 +185,17 @@
     justify-content: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    text-align: left;
+  }
+
+  .heroTitle {
+    font-size: 2.8rem;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .heroDescription {
+    font-size: 1.2rem;
+    line-height: 1.6;
   }
 }

@@ -73,7 +73,13 @@ function Hero() {
 
 function Feature({ iconStyle, title, description }) {
   return (
-    <div className={classnames('col col--4')}>
+    <div
+      className={classnames(
+        'col col--4',
+        styles.featureWrapper,
+        !description && styles.featureBigIconWrapper
+      )}
+    >
       {description === undefined ? (
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <span className={classnames(styles.featureBigIcon, iconStyle)} />
@@ -109,7 +115,7 @@ function Features() {
   return (
     <section className={classnames(styles.section, styles.features)}>
       <div className={classnames('container', styles.container)}>
-        <div className="row">
+        <div className={classnames('row', styles.featuresWrapper)}>
           {featureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
