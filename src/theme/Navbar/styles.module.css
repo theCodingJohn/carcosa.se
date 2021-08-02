@@ -12,9 +12,9 @@
 }
 
 @media (max-width: 768px) {
-  .hideLogoText {
+  /* .hideLogoText {
     display: none;
-  }
+  } */
 }
 
 .navbarHideable {

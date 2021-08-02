@@ -3,8 +3,8 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { NavbarLogo } from '@docusaurus/theme-common';
 import { useThemeConfig } from '@docusaurus/theme-common';
+import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
@@ -45,6 +45,13 @@ function FooterLink({ to, href, label, prependBaseUrlToHref, ...props }) {
     </Link>
   );
 }
+
+FooterLink.propTypes = {
+  to: PropTypes.string,
+  href: PropTypes.string,
+  label: PropTypes.string,
+  prependBaseUrlToHref: PropTypes.any,
+};
 
 function Logo({ ...props }) {
   const {

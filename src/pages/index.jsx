@@ -1,11 +1,9 @@
 import React from 'react';
-import clsx from 'clsx';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './index.module.css';
+import PropTypes from 'prop-types';
 
 const featureList = [
   {
@@ -59,7 +57,7 @@ const featureList = [
   },
 ];
 
-function Hero({ tagline, config }) {
+function Hero() {
   return (
     <header className={classnames('hero hero--primary', styles.heroSection)}>
       <div className={classnames('container', styles.container, styles.heroContainer)}>
@@ -116,7 +114,13 @@ function Feature({ iconStyle, title, description }) {
   );
 }
 
-function Features({ config }) {
+Feature.propTypes = {
+  iconStyle: PropTypes.object,
+  title: PropTypes.string,
+  description: PropTypes.string,
+};
+
+function Features() {
   return (
     <section className={classnames(styles.section, styles.features)}>
       <div className={classnames('container', styles.container)}>
@@ -130,53 +134,53 @@ function Features({ config }) {
   );
 }
 
-function Demo({ config }) {
-  return (
-    <div className={styles.darkBackground}>
-      <section className={classnames('text--center', styles.section, styles.demoSection)}>
-        <div className={classnames('container', styles.container, styles.demoContainer)}>
-          {config.lines.map((line, idx) => (
-            <h1 key={idx} className={classnames('hero__title', styles.sectionHeadingDark)}>
-              {line}
-            </h1>
-          ))}
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <Link
-              className={classnames(
-                'button button--outline button--lg',
-                styles.button,
-                styles.greenBtn,
-                styles.demoBtn
-              )}
-              to={useBaseUrl(config.cta.link)}
-            >
-              {config.cta.text}
-            </Link>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
+// function Demo({ config }) {
+//   return (
+//     <div className={styles.darkBackground}>
+//       <section className={classnames('text--center', styles.section, styles.demoSection)}>
+//         <div className={classnames('container', styles.container, styles.demoContainer)}>
+//           {config.lines.map((line, idx) => (
+//             <h1 key={idx} className={classnames('hero__title', styles.sectionHeadingDark)}>
+//               {line}
+//             </h1>
+//           ))}
+//           <div style={{ display: 'flex', justifyContent: 'center' }}>
+//             <Link
+//               className={classnames(
+//                 'button button--outline button--lg',
+//                 styles.button,
+//                 styles.greenBtn,
+//                 styles.demoBtn
+//               )}
+//               to={useBaseUrl(config.cta.link)}
+//             >
+//               {config.cta.text}
+//             </Link>
+//           </div>
+//         </div>
+//       </section>
+//     </div>
+//   );
+// }
 
-function Consolidation({ config }) {
-  return (
-    <section className={classnames(styles.section, styles.consolidation, styles.darkBackground)}>
-      <div className={classnames('container', styles.container)}>
-        <img src={useBaseUrl('img/microsite/consolidation.gif')} />
-      </div>
-      <div className={classnames('container', styles.container, styles.textContainer)}>
-        <div>
-          {config.snippets.map((snippet, idx) => (
-            <p key={idx}>{snippet}</p>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+// function Consolidation({ config }) {
+//   return (
+//     <section className={classnames(styles.section, styles.consolidation, styles.darkBackground)}>
+//       <div className={classnames('container', styles.container)}>
+//         <img src={useBaseUrl('img/microsite/consolidation.gif')} />
+//       </div>
+//       <div className={classnames('container', styles.container, styles.textContainer)}>
+//         <div>
+//           {config.snippets.map((snippet, idx) => (
+//             <p key={idx}>{snippet}</p>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 
-function Slope({ direction }) {
+function Slope() {
   return (
     <div className={styles.slopeContainer}>
       <div className={styles.slope} />
