@@ -22,3 +22,7 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+html {
+  background: linear-gradient(180deg, #dceff5 1%, #ffffff 20%) no-repeat;
+}
