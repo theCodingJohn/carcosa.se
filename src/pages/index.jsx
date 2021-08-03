@@ -3,7 +3,6 @@ import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
-import PropTypes from 'prop-types';
 
 const featureList = [
   {
@@ -104,12 +103,6 @@ function Feature({ iconStyle, title, description }) {
     </div>
   );
 }
-
-Feature.propTypes = {
-  iconStyle: PropTypes.object,
-  title: PropTypes.string,
-  description: PropTypes.string,
-};
 
 function Features() {
   return (

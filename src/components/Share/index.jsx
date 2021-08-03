@@ -1,7 +1,6 @@
 import React from 'react';
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import { ArrowContainer, Popover } from 'react-tiny-popover';
-import PropTypes from 'prop-types';
 
 import './styles.css';
 
@@ -22,14 +21,6 @@ const ShareLink = ({ className, label, color, link, onClick }) => (
     {label}
   </a>
 );
-
-ShareLink.propTypes = {
-  className: PropTypes.string,
-  label: PropTypes.string,
-  color: PropTypes.string,
-  link: PropTypes.string,
-  onClick: PropTypes.func,
-};
 
 const Share = ({ title, authors }) => {
   const [open, setOpen] = React.useState(false);
@@ -111,11 +102,6 @@ const Share = ({ title, authors }) => {
       }}
     </BrowserOnly>
   );
-};
-
-Share.propTypes = {
-  title: PropTypes.string,
-  authors: PropTypes.array,
 };
 
 export default Share;

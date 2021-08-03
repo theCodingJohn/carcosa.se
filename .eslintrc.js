@@ -9,11 +9,14 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   extends: ['eslint:recommended', 'plugin:react/recommended'],
   rules: {
     'no-console': 0,
-    'indent': ['error', 2, { SwitchCase: 1, OBjectExpression: 1 }],
+    'indent': ['error', 2, { SwitchCase: 1, ignoredNodes: ['ConditionalExpression'] }],
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
     'quote-props': ['error', 'consistent'],
@@ -21,7 +24,15 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'object-curly-spacing': ['error', 'always'],
     'arrow-spacing': ['error', { before: true, after: true }],
-    'no-console': ['error', { allow: ['warn', 'error'] }],
-    'linebreak-style': 0,
+    'linebreak-style': ['error', 'unix'],
+    'react/prop-types': 0,
+    'no-unused-vars': ['error', { argsIgnorePattern: 'props' }],
+    'import/prefer-default-export': 'off',
+    'no-restricted-syntax': ['error', 'ForInStatement', 'LabeledStatement', 'WithStatement'],
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
   },
 };

@@ -4,7 +4,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import { useThemeConfig } from '@docusaurus/theme-common';
-import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
@@ -32,26 +31,19 @@ function FooterLink({ to, href, label, prependBaseUrlToHref, ...props }) {
       className="footer__link-item"
       {...(href
         ? {
-            target: '_blank',
-            rel: 'noopener noreferrer',
-            href: prependBaseUrlToHref ? normalizedHref : href,
-          }
+          target: '_blank',
+          rel: 'noopener noreferrer',
+          href: prependBaseUrlToHref ? normalizedHref : href,
+        }
         : {
-            to: toUrl,
-          })}
+          to: toUrl,
+        })}
       {...props}
     >
       {label}
     </Link>
   );
 }
-
-FooterLink.propTypes = {
-  to: PropTypes.string,
-  href: PropTypes.string,
-  label: PropTypes.string,
-  prependBaseUrlToHref: PropTypes.any,
-};
 
 function Logo({ ...props }) {
   const {
@@ -61,7 +53,7 @@ function Logo({ ...props }) {
 
   return (
     <div className={clsx('navbar__brand', styles.navbarLogo)} {...props}>
-      {logoImageUrl != null && (
+      {logoImageUrl !== null && (
         <>
           <img className="navbar__logo" src={logoImageUrl} alt={logo.alt} />
         </>
@@ -79,13 +71,13 @@ function SocialMedia({ config }) {
           style={{ textDecoration: 'none' }}
           {...(media.href
             ? {
-                target: '_blank',
-                rel: 'noopener noreferrer',
-                href: media.href,
-              }
+              target: '_blank',
+              rel: 'noopener noreferrer',
+              href: media.href,
+            }
             : {
-                to: media.to,
-              })}
+              to: media.to,
+            })}
         >
           {media.icon !== undefined && <i className={clsx(styles.icon, media.icon)} />}
         </Link>
@@ -102,8 +94,8 @@ function Links({ links }) {
     <div className="row footer__links">
       {links.map((linkItem, i) => (
         <div key={i} className="col footer__col">
-          {linkItem.title != null ? <h4 className="footer__title">{linkItem.title}</h4> : null}
-          {linkItem.items != null && Array.isArray(linkItem.items) && linkItem.items.length > 0 ? (
+          {linkItem.title !== null ? <h4 className="footer__title">{linkItem.title}</h4> : null}
+          {linkItem.items !== null && Array.isArray(linkItem.items) && linkItem.items.length > 0 ? (
             <ul className={clsx('footer__items', styles.footerAdditional)}>
               {linkItem.items.map((item, key) =>
                 item.html ? (

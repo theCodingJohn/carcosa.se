@@ -36,15 +36,7 @@ var items = [
   // },
 ];
 
-function NavLink({
-  to,
-  href = '',
-  label,
-  activeClassName = 'navbar__link--active',
-  prependBaseUrlToHref = false,
-  icon,
-  ...props
-}) {
+function NavLink({ to, href = '', label, prependBaseUrlToHref = false, icon, ...props }) {
   const toUrl = useBaseUrl(to);
   const normalizedHref = useBaseUrl(href, { forcePrependBaseUrl: true });
 
@@ -52,14 +44,14 @@ function NavLink({
     <Link
       {...(href
         ? {
-            target: '_blank',
-            rel: 'noopener noreferrer',
-            href: prependBaseUrlToHref ? normalizedHref : href,
-          }
+          target: '_blank',
+          rel: 'noopener noreferrer',
+          href: prependBaseUrlToHref ? normalizedHref : href,
+        }
         : {
-            isNavLink: true,
-            to: toUrl,
-          })}
+          isNavLink: true,
+          to: toUrl,
+        })}
       {...props}
     >
       <span className={clsx(styles.navbarItemIcon, icon)} />
@@ -179,7 +171,6 @@ function Navbar() {
         colorMode: { disableSwitch: disableColorModeSwitch = false } = {},
       },
     },
-    isClient,
   } = useDocusaurusContext();
   const [sidebarShown, setSidebarShown] = useState(false);
 
@@ -223,7 +214,7 @@ function Navbar() {
       >
         <div className="navbar__inner">
           <div className="navbar__items">
-            {items != null && items.length !== 0 && (
+            {items !== null && items.length !== 0 && (
               <div
                 aria-label="Navigation bar toggle"
                 className="navbar__toggle"
