@@ -31,7 +31,7 @@
 }
 
 .slope {
-  background-color: #00a4b8;
+  background-color: var(--ifm-color-primary);
   clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
   height: 75px;
   margin-top: -1px;
@@ -52,7 +52,7 @@
   left: auto;
   position: relative;
   overflow: hidden;
-  background-color: #00a4b8;
+  background-color: var(--ifm-color-primary);
   color: #fff;
 }
 
@@ -93,8 +93,8 @@
 .featureAccent {
   width: 25%;
   height: 5px;
-  border-color: #02acbe;
-  background-color: #02acbe;
+  border-color: var(--ifm-color-primary-200);
+  background-color: var(--ifm-color-primary-200);
 }
 
 .featureImage {
@@ -103,12 +103,12 @@
 }
 
 .featureIcon {
-  color: #02acbe;
+  color: var(--ifm-color-primary-200);
   font-size: 3rem;
 }
 
 .featureBigIcon {
-  color: #02acbe;
+  color: var(--ifm-color-primary-200);
   font-size: 15rem;
 }
 

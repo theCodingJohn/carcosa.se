@@ -8,13 +8,7 @@
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #00a4b8;
-  --ifm-color-primary-dark: #0094a6;
-  --ifm-color-primary-darker: #008b9c;
-  --ifm-color-primary-darkest: #007381;
-  --ifm-color-primary-light: #00b4ca;
-  --ifm-color-primary-lighter: #00bdd4;
-  --ifm-color-primary-lightest: #00d5ef;
-  --ifm-code-font-size: 95%;
+	--ifm-color-primary-200: #02acbe;
 
   --ifm-navbar-link-color: rgb(40, 29, 29);
   --ifm-navbar-link-hover-color: #dceff5;
