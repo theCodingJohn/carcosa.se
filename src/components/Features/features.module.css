@@ -1,0 +1,35 @@
+.container {
+  margin: 5%;
+  max-width: 75%;
+}
+
+.section {
+  padding: 6% 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.features {
+  padding: 2rem 0 0;
+  width: 100%;
+  background: linear-gradient(180deg, #dceff5 1%, #ffffff 20%);
+}
+
+@media screen and (max-width: 997px) {
+  .features {
+    padding: 2rem 0;
+  }
+
+  .featuresWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin: 0%;
+    max-width: 100%;
+  }
+}

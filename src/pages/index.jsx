@@ -1,8 +1,24 @@
 import React from 'react';
-import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import styles from './index.module.css';
+
+import Hero from '../components/Hero';
+import Slope from '../components/Slope';
+import Features from '../components/Features';
+
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext();
+  const sections = siteConfig.customFields.sections;
+  return (
+    <Layout title={siteConfig.title} description={siteConfig.customFields.tagDescription}>
+      <Hero tagline={siteConfig.tagline} config={siteConfig.customFields.hero} />
+      <Slope />
+      <main>
+        <Features featureList={featureList} config={sections.features} />
+      </main>
+    </Layout>
+  );
+}
 
 const featureList = [
   {
@@ -55,87 +71,3 @@ const featureList = [
     `,
   },
 ];
-
-function Hero() {
-  return (
-    <header className={classnames('hero hero--primary', styles.heroSection)}>
-      <div className={classnames('container', styles.container, styles.heroContainer)}>
-        <h1 className={classnames(styles.heroTitle)}>Venture Time</h1>
-        <h4 className={classnames(styles.heroDescription)}>
-          We are an operative co-founder of IT-companies with international growth ambitions. Our
-          primary investment resources are time and knowledge to solve common biz and tech problems.
-        </h4>
-      </div>
-    </header>
-  );
-}
-
-function Feature({ iconStyle, title, description }) {
-  return (
-    <div
-      className={classnames(
-        'col col--4',
-        styles.featureWrapper,
-        !description && styles.featureBigIconWrapper
-      )}
-    >
-      {description === undefined ? (
-        <div style={{ display: 'flex', justifyContent: 'center' }}>
-          <span className={classnames(styles.featureBigIcon, iconStyle)} />
-        </div>
-      ) : (
-        <>
-          {iconStyle && (
-            <div className={classnames('text--center', styles.featureIcon)}>
-              <hr className={classnames(styles.featureAccent)} />
-              <span className={classnames(styles.featureIcon, iconStyle)} />
-              <hr className={classnames(styles.featureAccent)} />
-            </div>
-          )}
-          <div className="text--center">
-            <h2>{title}</h2>
-          </div>
-          <div className={classnames(styles.featureText)}>
-            <p>{description}</p>
-          </div>
-        </>
-      )}
-    </div>
-  );
-}
-
-function Features() {
-  return (
-    <section className={classnames(styles.section, styles.features)}>
-      <div className={classnames('container', styles.container)}>
-        <div className={classnames('row', styles.featuresWrapper)}>
-          {featureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Slope() {
-  return (
-    <div className={styles.slopeContainer}>
-      <div className={styles.slope} />
-    </div>
-  );
-}
-
-export default function Home() {
-  const { siteConfig } = useDocusaurusContext();
-  const sections = siteConfig.customFields.sections;
-  return (
-    <Layout title={siteConfig.title} description={siteConfig.customFields.tagDescription}>
-      <Hero tagline={siteConfig.tagline} config={siteConfig.customFields.hero} />
-      <Slope />
-      <main>
-        <Features config={sections.features} />
-      </main>
-    </Layout>
-  );
-}
