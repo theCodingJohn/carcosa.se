@@ -33,6 +33,10 @@ html {
   background: linear-gradient(180deg, #dceff5 1%, #ffffff 20%) no-repeat;
 }
 
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module a:hover {
+	color: var(--ifm-color-primary);
+}
+
 /* .table-of-contents__link--active {
 	color: #fdb813;	
 }
