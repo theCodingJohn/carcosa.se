@@ -31,6 +31,7 @@
 
 html {
   background: linear-gradient(180deg, #dceff5 1%, #ffffff 20%) no-repeat;
+	scroll-behavior: smooth;
 }
 
 .announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module a:hover {
