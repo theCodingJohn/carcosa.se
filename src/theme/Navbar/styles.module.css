@@ -38,6 +38,10 @@
   margin-left: 0.33rem;
 }
 
+.navbarItem:hover {
+	color: var(--ifm-color-primary);
+}
+
 .navbarWhite {
   background-color: inherit;
 }
