@@ -7,7 +7,7 @@ const Feature = ({ description, iconStyle, title }) => {
   return (
     <div
       className={classnames(
-        'col col--4',
+        'col col--4 feature',
         styles.featureWrapper,
         !description && styles.featureBigIconWrapper
       )}

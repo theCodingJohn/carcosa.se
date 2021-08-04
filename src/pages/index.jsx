@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import Hero from '../components/Hero';
 import Slope from '../components/Slope';
 import Features from '../components/Features';
+import { showElement } from '../utils/animation';
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   const sections = siteConfig.customFields.sections;
+
+  useEffect(() => {
+    showElement('.feature', { stagger: 0.1 });
+  }, []);
+
   return (
     <Layout title={siteConfig.title} description={siteConfig.customFields.tagDescription}>
       <Hero tagline={siteConfig.tagline} config={siteConfig.customFields.hero} />

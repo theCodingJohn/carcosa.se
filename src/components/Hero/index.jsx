@@ -1,15 +1,14 @@
 import React, { useEffect, useRef } from 'react';
 import classnames from 'classnames';
-import gsap from 'gsap';
 
 import styles from './hero.module.css';
+import { showElement } from '../../utils/animation';
 
 const Hero = () => {
   const heroTextWrapperRef = useRef(null);
 
   useEffect(() => {
-    gsap.from(heroTextWrapperRef.current, { y: '3rem', opacity: 0 });
-
+    showElement(heroTextWrapperRef.current);
   }, [heroTextWrapperRef]);
 
   return (
