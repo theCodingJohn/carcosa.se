@@ -13,7 +13,7 @@
 .features {
   padding: 2rem 0 0;
   width: 100%;
-  background: linear-gradient(180deg, #dceff5 1%, #ffffff 20%);
+  background: var(--ifm-feature-background);
 }
 
 @media screen and (max-width: 997px) {

@@ -1,5 +1,5 @@
 .slopeContainer {
-  background-color: #dceff5;
+  background-color: var(--ifm-slope-color);
 }
 
 .slope {
