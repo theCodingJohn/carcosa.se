@@ -46,6 +46,7 @@ html {
 /* announcement bar */
 .announcementBar_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module {
 	background: var(--ifm-color-dark);
+	z-index: 1;
 }
 
 .announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module a:hover {
