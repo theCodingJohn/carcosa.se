@@ -1,6 +1,7 @@
 import React, { useCallback, useState, useEffect } from 'react';
 import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 import useHideableNavbar from '@theme/hooks/useHideableNavbar';
 import useLockBodyScroll from '@theme/hooks/useLockBodyScroll';
@@ -80,7 +81,6 @@ const Navbar = () => {
         'navbar-sidebar--show': sidebarShown,
         [styles.navbarHideable]: hideOnScroll,
         [styles.navbarHidden]: !isNavbarVisible,
-        [styles.navbarWhite]: typeof window !== 'undefined' && window.location.pathname !== '/',
       })}
     >
       <div className="navbar__inner">
@@ -107,7 +107,10 @@ const Navbar = () => {
       <div className="navbar-sidebar">
         <div className="navbar-sidebar__brand">
           <div className={clsx('navbar__brand', styles.navbarLogoCustom)} onClick={hideSidebar}>
-            <Logo imageClassName={clsx('navbar__logo', styles.navbarLogoCustom)} />
+            <img
+              className={clsx('navbar__title', styles.navbarLogoTextCustom)}
+              src={useBaseUrl('img/carcosa-white.svg')}
+            />
           </div>
         </div>
 
