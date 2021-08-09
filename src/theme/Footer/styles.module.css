@@ -72,7 +72,7 @@
 }
 
 .icon:hover {
-  color: #02acbe;
+  color: var(--ifm-color-secondary);
 }
 
 .copyright {

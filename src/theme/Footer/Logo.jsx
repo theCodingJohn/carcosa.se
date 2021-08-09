@@ -9,7 +9,7 @@ const Logo = ({ ...props }) => {
   const {
     navbar: { logo },
   } = useThemeConfig();
-  const logoImageUrl = useBaseUrl('img/carcosa-white.svg');
+  const logoImageUrl = useBaseUrl('img/carcosa-black.svg');
 
   return (
     <div className={clsx('navbar__brand', styles.navbarLogo)} {...props}>

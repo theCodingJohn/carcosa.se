@@ -19,6 +19,7 @@ module.exports = {
   ],
   themeConfig: {
     colorMode: {
+      defaultMode: 'dark',
       disableSwitch: true,
     },
     gtag: {
@@ -30,8 +31,8 @@ module.exports = {
     announcementBar: {
       id: 'hirig', // Any value that will identify this message.
       content: 'We are hiring, <a href="/docs/hiring/developer">read more</a>',
-      backgroundColor: '#fafbfc', // Defaults to `#fff`.
-      textColor: '#091E42', // Defaults to `#000`.
+      backgroundColor: '#001524', // Defaults to `#fff`.
+      textColor: '#fff', // Defaults to `#000`.
       isCloseable: true, // Defaults to `true`.
     },
     navbar: {

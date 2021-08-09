@@ -13,8 +13,8 @@
 .featureAccent {
   width: 25%;
   height: 5px;
-  border-color: var(--ifm-color-primary-200);
-  background-color: var(--ifm-color-primary-200);
+  border-color: var(--ifm-color-primary);
+  background-color: var(--ifm-color-primary);
 }
 
 .featureImage {
@@ -23,12 +23,12 @@
 }
 
 .featureIcon {
-  color: var(--ifm-color-primary-200);
+  color: var(--ifm-color-primary);
   font-size: 3rem;
 }
 
 .featureBigIcon {
-  color: var(--ifm-color-primary-200);
+  color: var(--ifm-color-primary);
   font-size: 15rem;
 }
 
