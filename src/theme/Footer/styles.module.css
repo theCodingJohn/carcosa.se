@@ -1,12 +1,11 @@
 .footer {
   padding-bottom: 5rem;
-
   background: var(--ifm-footer-background-color);
   color: #fff;
 }
 
 .slope {
-  background: #fff;
+  background: var(--ifm-slope-color);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0);
   height: 100px;
   margin-bottom: 1rem;

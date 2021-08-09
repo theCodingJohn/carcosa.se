@@ -1,0 +1,17 @@
+.slopeContainer {
+  background-color: var(--ifm-slope-color);
+}
+
+.slope {
+  background-color: var(--ifm-color-primary);
+  clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+  height: 75px;
+  margin-top: -1px;
+}
+
+@media screen and (max-width: 997px) {
+  .slope {
+    clip-path: polygon(0 0, 100% 0, 0 100%, 0 0);
+    height: 35px;
+  }
+}
