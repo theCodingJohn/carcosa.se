@@ -13,13 +13,13 @@ const SocialMedia = ({ config }) => {
           style={{ textDecoration: 'none' }}
           {...(media.href
             ? {
-              target: '_blank',
-              rel: 'noopener noreferrer',
-              href: media.href,
-            }
+                target: '_blank',
+                rel: 'noopener noreferrer',
+                href: media.href,
+              }
             : {
-              to: media.to,
-            })}
+                to: media.to,
+              })}
         >
           {media.icon !== undefined && <i className={clsx(styles.icon, media.icon)} />}
         </Link>

@@ -13,14 +13,14 @@ const NavLink = ({ to, href = '', label, prependBaseUrlToHref = false, icon, ...
     <Link
       {...(href
         ? {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          href: prependBaseUrlToHref ? normalizedHref : href,
-        }
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            href: prependBaseUrlToHref ? normalizedHref : href,
+          }
         : {
-          isNavLink: true,
-          to: toUrl,
-        })}
+            isNavLink: true,
+            to: toUrl,
+          })}
       {...props}
     >
       <span className={clsx(styles.navbarItemIcon, icon)} />

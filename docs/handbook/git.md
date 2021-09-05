@@ -13,24 +13,25 @@ The commit message should be structured as follows:
 
 [optional footer(s)]
 ```
+
 See <a href="#examples">examples</a> below.
 
-## Types   
+## Types
 
 Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, etc., followed by the `OPTIONAL scope`, `OPTIONAL !`, and REQUIRED terminal colon and space.
 
-| Type  | Meaning  | Description  |
-|---|---|---|
-| feat | Features | MUST be used when a commit adds a new feature to your application or library. |
-| fix | Bug Fixes  | MUST be used when a commit represents a bug fix for your application. |
-| style | Styles  | Changes that do not affect the meaning of the code (white­-space, format­ting, missing semi-c­olons, etc)  |
-| refactor | Code Refact­oring | A code change that neither fixes a bug nor adds a feature |
-| perf | Perfor­mance Improv­ements | A code change that improves perfor­mance  |
-| test | Tests | Adding missing tests or correcting existing tests |
-| build | Builds | Changes that affect the build system or external depend­encies (example scopes: gulp, broccoli, npm) |
-| ci | Continuous Integr­ations | Changes to our CI config­uration files and scripts (example scopes: Travis, Circle, Browse­rStack, SauceLabs) |
-| chore | Chores | Other changes that don’t modify src or test files |
-| revert | Reverts | Reverts a previous commit |
+| Type     | Meaning                    | Description                                                                                                   |
+| -------- | -------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| feat     | Features                   | MUST be used when a commit adds a new feature to your application or library.                                 |
+| fix      | Bug Fixes                  | MUST be used when a commit represents a bug fix for your application.                                         |
+| style    | Styles                     | Changes that do not affect the meaning of the code (white­-space, format­ting, missing semi-c­olons, etc)     |
+| refactor | Code Refact­oring          | A code change that neither fixes a bug nor adds a feature                                                     |
+| perf     | Perfor­mance Improv­ements | A code change that improves perfor­mance                                                                      |
+| test     | Tests                      | Adding missing tests or correcting existing tests                                                             |
+| build    | Builds                     | Changes that affect the build system or external depend­encies (example scopes: gulp, broccoli, npm)          |
+| ci       | Continuous Integr­ations   | Changes to our CI config­uration files and scripts (example scopes: Travis, Circle, Browse­rStack, SauceLabs) |
+| chore    | Chores                     | Other changes that don’t modify src or test files                                                             |
+| revert   | Reverts                    | Reverts a previous commit                                                                                     |
 
 ## Description
 
@@ -57,6 +58,7 @@ docs: correct spelling of CHANGELOG
 ```
 feat(lang): add polish language
 ```
+
 ### Commit message with description and breaking change footer
 
 ```
@@ -70,6 +72,7 @@ BREAKING CHANGE: `extends` key in config file is now used for extending other co
 ```
 refactor!: drop support for Node 6
 ```
+
 ### Commit message with scope and ! to draw attention to breaking change
 
 ```
@@ -77,6 +80,7 @@ refactor!: drop support for Node 6
 
 BREAKING CHANGE: refactor to use JavaScript features not available in Node 6.
 ```
+
 ### Commit message with multi-paragraph body and multiple footers
 
 ```
@@ -91,6 +95,7 @@ Refs #133
 ```
 
 ## Fixing up commits
+
 If you already made commits and they don't meet the Conventional Commits specification, you have a couple of options:
 
 - if there's only one commit to redo, the easiest option is to use `git commit --amend` with no staged changes, which will allow you to edit the commit message.

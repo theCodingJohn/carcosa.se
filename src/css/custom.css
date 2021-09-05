@@ -7,65 +7,66 @@
 
 /* You can override the default Infima variables here. */
 :root {
-	--ifm-color-primary: #fff200;
-	--ifm-color-primary-200: #fdb813;
-	--ifm-color-secondary:#FF008C;
-	--ifm-color-dark: #001524;
-	--ifm-font-color-base: #fff;
-	--ifm-font-color-base-light: #000;
+  --ifm-color-primary: #fff200;
+  --ifm-color-primary-200: #fdb813;
+  --ifm-color-secondary: #ff008c;
+  --ifm-color-dark: #001524;
+  --ifm-font-color-base: #fff;
+  --ifm-font-color-base-light: #000;
 
-	--ifm-slope-color: var(--ifm-color-dark);
-	--ifm-feature-background: var(--ifm-color-dark);
+  --ifm-slope-color: var(--ifm-color-dark);
+  --ifm-feature-background: var(--ifm-color-dark);
 
-	--ifm-navbar-link-color: var(--ifm-color-dark);
+  --ifm-navbar-link-color: var(--ifm-color-dark);
   --ifm-navbar-link-hover-color: var(--ifm-color-secondary);
 
-	--ifm-heading-color: var(--ifm-font-color-base);
-	--ifm-link-color: var(--ifm-color-primary-200);
-	--ifm-toc-link-color: var(--ifm-font-color-base);
-	--ifm-toc-border-color: var(--ifm-color-primary-200);
-	--ifm-menu-color: var(--ifm-font-color-base);
-	--ifm-menu-color-active: var(--ifm-color-primary-200);
-	--ifm-pagination-nav-color-hover: var(--ifm-color-primary-200);
-	--ifm-table-stripe-background: transparent;
-	--ifm-code-background: rgba(255,255,255, 0.4);
+  --ifm-heading-color: var(--ifm-font-color-base);
+  --ifm-link-color: var(--ifm-color-primary-200);
+  --ifm-toc-link-color: var(--ifm-font-color-base);
+  --ifm-toc-border-color: var(--ifm-color-primary-200);
+  --ifm-menu-color: var(--ifm-font-color-base);
+  --ifm-menu-color-active: var(--ifm-color-primary-200);
+  --ifm-pagination-nav-color-hover: var(--ifm-color-primary-200);
+  --ifm-table-stripe-background: transparent;
+  --ifm-code-background: rgba(255, 255, 255, 0.4);
 
   --ifm-footer-color: var(--ifm-font-color-base-light);
-  --ifm-footer-background-color:  var(--ifm-color-primary);
-	--ifm-footer-title-color: var(--ifm-font-color-base-light);
-	--ifm-footer-link-color: var(--ifm-font-color-base-light);
-	--ifm-footer-link-hover-color: var(--ifm-color-secondary);
+  --ifm-footer-background-color: var(--ifm-color-primary);
+  --ifm-footer-title-color: var(--ifm-font-color-base-light);
+  --ifm-footer-link-color: var(--ifm-font-color-base-light);
+  --ifm-footer-link-hover-color: var(--ifm-color-secondary);
 
-	--ifm-hero-text: var(--ifm-font-color-base-light);
-	--ifm-feature-text: var(--ifm-font-color-base);
+  --ifm-hero-text: var(--ifm-font-color-base-light);
+  --ifm-feature-text: var(--ifm-font-color-base);
 }
 
 html {
   background: var(--ifm-color-dark);
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 /* announcement bar */
 .announcementBar_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module {
-	background: var(--ifm-color-dark);
-	z-index: 1;
+  background: var(--ifm-color-dark);
+  z-index: 1;
 }
 
-.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module a:hover {
-	color: var(--ifm-color-primary);
+.announcementBarContent_node_modules-\@docusaurus-theme-classic-lib-next-theme-AnnouncementBar-styles-module
+  a:hover {
+  color: var(--ifm-color-primary);
 }
 
 /* docs table of contents */
 .table-of-contents__link--active {
-	color: #fdb813;	
+  color: #fdb813;
 }
 
 .table-of-contents__link:hover {
-	color: #fdb813;	
+  color: #fdb813;
 }
 
 /* docs menu button */
 .menu__button {
-	border: 1px solid #000;
-	background: var(--ifm-color-primary);
+  border: 1px solid #000;
+  background: var(--ifm-color-primary);
 }

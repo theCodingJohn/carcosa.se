@@ -3,7 +3,7 @@ import clsx from 'clsx';
 
 import NavLink from './NavLink';
 
-const  MobileNavItem = ({ items, className, ...props }) => {
+const MobileNavItem = ({ items, className, ...props }) => {
   // Need to destructure position from props so that it doesn't get passed on.
   const navLinkClassNames = (extraClassName, isSubList = false) =>
     clsx(

@@ -11,13 +11,13 @@ const FooterLink = ({ to, href, label, prependBaseUrlToHref, ...props }) => {
       className="footer__link-item"
       {...(href
         ? {
-          target: '_blank',
-          rel: 'noopener noreferrer',
-          href: prependBaseUrlToHref ? normalizedHref : href,
-        }
+            target: '_blank',
+            rel: 'noopener noreferrer',
+            href: prependBaseUrlToHref ? normalizedHref : href,
+          }
         : {
-          to: toUrl,
-        })}
+            to: toUrl,
+          })}
       {...props}
     >
       {label}

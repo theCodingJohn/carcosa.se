@@ -26,7 +26,7 @@ const items = [
     to: 'docs/intro',
     icon: 'fe fe-book',
     label: 'Docs',
-  }
+  },
 ];
 
 // If split links by left/right
@@ -47,9 +47,7 @@ const splitLinks = (links) => {
 const Navbar = () => {
   const {
     siteConfig: {
-      themeConfig: {
-        navbar: { hideOnScroll = false } = {},
-      },
+      themeConfig: { navbar: { hideOnScroll = false } = {} },
     },
   } = useDocusaurusContext();
   const [sidebarShown, setSidebarShown] = useState(false);
@@ -85,9 +83,7 @@ const Navbar = () => {
     >
       <div className="navbar__inner">
         <div className="navbar__items">
-          {!!items && items.length !== 0 && (
-            <MenuButton showSidebar={showSidebar}/>
-          )}
+          {!!items && items.length !== 0 && <MenuButton showSidebar={showSidebar} />}
           <div className={clsx('navbar__brand', styles.navbarLogoCustom)}>
             <Logo imageClassName={clsx('navbar__logo', styles.navbarLogoCustom)} />
           </div>
