@@ -36,4 +36,7 @@ Deploy to GitHub `gh-pages` branch.
 
 ```console
 GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+
+# Example
+GIT_USER=arlukin USE_SSH=true yarn deploy
 ```
