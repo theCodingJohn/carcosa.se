@@ -32,6 +32,7 @@ Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, e
 | ci       | Continuous Integr­ations   | Changes to our CI config­uration files and scripts (example scopes: Travis, Circle, Browse­rStack, SauceLabs) |
 | chore    | Chores                     | Other changes that don’t modify src or test files                                                             |
 | revert   | Reverts                    | Reverts a previous commit                                                                                     |
+| docs     | Documentation              | Documentation only changes                                                                                    |
 
 ## Description
 
