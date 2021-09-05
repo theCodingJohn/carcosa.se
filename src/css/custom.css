@@ -27,6 +27,8 @@
 	--ifm-menu-color: var(--ifm-font-color-base);
 	--ifm-menu-color-active: var(--ifm-color-primary-200);
 	--ifm-pagination-nav-color-hover: var(--ifm-color-primary-200);
+	--ifm-table-stripe-background: transparent;
+	--ifm-code-background: rgba(255,255,255, 0.4);
 
   --ifm-footer-color: var(--ifm-font-color-base-light);
   --ifm-footer-background-color:  var(--ifm-color-primary);
@@ -67,4 +69,3 @@ html {
 	border: 1px solid #000;
 	background: var(--ifm-color-primary);
 }
-
