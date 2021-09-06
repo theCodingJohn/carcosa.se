@@ -36,11 +36,11 @@ Commits MUST be prefixed with a type, which consists of a noun, `feat`, `fix`, e
 
 ## Description
 
-A description MUST immediately follow the colon and space after the type/scope prefix. The description is a short summary of the code changes, e.g., `fix: array parsing issue when multiple spaces were contained in string`.
+A description should describe your changes in imperative mood.This means you need to eliminate the temptation to use gerunds or past tense in your description line. Don't write a git commit description line that talks about what you did, or what you are doing. Instead, describe what was done. A description MUST immediately follow the colon and space after the type/scope prefix. The description is a short summary of the code changes, e.g., `fix: fix the fencepost error`.
 
 ## Scope (optional)
 
-A scope MAY be provided after a type. A scope MUST consist of a noun describing a section of the codebase surrounded by parenthesis, e.g., `feat(ratings): added the ability to add star ratings to posts`.
+A scope MAY be provided after a type. A scope MUST consist of a noun describing a section of the codebase surrounded by parenthesis, e.g., `feat(ratings): add the ability to add star ratings to posts`.
 
 ## Breaking Changes
 
