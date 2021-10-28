@@ -8,19 +8,19 @@ This is the handbook of how we run our virtual teams. Please make merge requests
 
 ## Onboarding
 
-Welcome to Carcosa. We are very happy that you have choosen to work with us. =)
+Welcome to Carcosa. We are very happy that you have chosen to work with us. =)
 
-Carcosa R&D AB is the legal entity (the company) you are working for. Carcosa R&D by it self doesn't have any customers and makes it's money in subsidarys. You will most likely work in several of them, depending on the amount of work avalable at the moment.
+Carcosa R&D AB is the legal entity (the company) you are working for. Carcosa R&D by itself doesn't have any customers and makes its money in subsidiaries. You will most likely work in several of them, depending on the amount of work avalable at the moment.
 
 We are also collaborating in LPGroup. Which mainly is a git-repo of open source code. In this repo we place code that can be reused in projects we are involved in.
 
 ## Payment
 
-In the beginning of our collaboration we see that you send invoices to us once a week. It should be sent via email every Monday, and include the number of hours worked the week before. We are using wise.com to transfer the money from Sweden to your country. You need to either register an account at Wise or send your bank details to your Carcosa contact. The transfer usually takes a couple of days after the invoice has been recived.
+In the beginning of our collaboration, we see that you send invoices to us once a week. It should be sent via email every Monday, and include the number of hours worked the week before. We are using wise.com to transfer the money from Sweden to your country. You need to either register an account on Wise or send your bank details to your Carcosa contact. The transfer usually takes a couple of days after the invoice has been received.
 
 ## Working time
 
-We practice very flexible working times. Our only fixed requirment is that you work your 40 hours a week. That means you can work 10 hours a day Monday to Tuesday or 6 hours a day Monday to Sunday. You decide what works best for you. That said, we belive it's a good work/life balance to work 8 hours a day Monday to Friday.
+We practice very flexible working times. Our only fixed requirement is that you work your 40 hours a week. That means you can work 10 hours a day Monday to Tuesday or 6 hours a day Monday to Sunday. You decide what works best for you. That said, we belive it's a good work/life balance to work 8 hours a day Monday to Friday.
 
 ## Time tracking
 
@@ -43,7 +43,7 @@ We will in the future have a weekly google meet meeting.
 
 We believe that neither side would process charge against the other part if any conflicts would come up. By that a contract or an NDA are not necessary. A much better way to handle this is by building trust and need to know basis.
 
-It's also worth mentioning that all code contribured to any repositories are copyrighted to the company owning that repository. More can be read in the licence file in each respository.
+It's also worth mentioning that all code contributed to any repositories are copyrighted to the company owning that repository. More can be read in the licence file in each respository.
 
 ## Required actions by you
 

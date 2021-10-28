@@ -6,9 +6,9 @@ sidebar_position: 1
 
 We are an operative co-founder of IT-companies with international growth ambitions. Our primary investment resources are time and knowledge to solve common biz and tech problems.
 
-Carcosa R&D is one of several companies in a group of startup founders. Some of us have worked together since 1997 and we have been building businesses together since 1999. We are a virtual group with office spaces int Stockholm, Sweden.
+Carcosa R&D is one of several companies in a group of startup founders. Some of us have worked together since 1997 and we have been building businesses together since 1999. We are a virtual group with office spaces in Stockholm, Sweden.
 
-The current focus industries are Foodtech and Fintech with success from Traveltech. Our various teams have vast experience from building business in 15 different countries. All companies we are involved in, has comitted teams with solid vision and mission, and a great amount of persistence. We are not only an active partner and board member, but an operative co-founder with a clear responsibility. Beyond that we have a broad network of startup founders and investors.
+The current focus industries are Foodtech and Fintech with success from Traveltech. Our various teams have vast experience from building business in 15 different countries. All companies we are involved in, has comitted teams with solid vision and mission, and a great amount of persistence. We are not only an active partner and board member, but an operative co-founder with a clear responsibility. Beyond that, we have a broad network of startup founders and investors.
 
 Based on our own startup journeys of building global and successful IT-companies, we only invest in companies with a strong, diversified and tight co-founder team. A team that understands that success will take both time and effort.
 
